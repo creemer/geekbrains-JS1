@@ -98,7 +98,7 @@ function mathOperation(a, b, operation) {
     }
 }
 
-alert(mathOperation(+prompt('Please First operand',''), +prompt('Please Second operand',''), prompt('Please operation','')));
+alert( mathOperation( +prompt('Please First operand', ''), +prompt('Please Second operand', ''), prompt('Please operation', '') ) );
 
 /**
  * Функция возведения числа X в степнь N
@@ -116,7 +116,7 @@ var x = +prompt('Number please',''),
 if (n < 1) {
     alert('Power ' + n + ' must be higher than 0')
 } else {
-    alert(pow(x,n));
+    alert( pow(x,n) );
 }
 
  /**
@@ -128,6 +128,6 @@ if (n < 1) {
          x;
  };
 
-alert(powRecurive(+prompt('Number please',''), +prompt('Power please','')));
+alert( powRecurive( +prompt('Number please', ''), +prompt('Power please', '') ) );
 
 alert(null == 0); // Выведет false - потому что null равен только undefined, и больше ничему.
