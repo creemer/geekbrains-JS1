@@ -119,4 +119,15 @@ if (n < 1) {
     alert(pow(x,n));
 }
 
+ /**
+  * Функция возведения числа X в степнь N с помощью реукерсии
+  */
+ function powRecurive(x, n) {
+     return (n != 1) ?
+         x * pow(x, n - 1) :
+         x;
+ };
+
+alert(powRecurive(+prompt('Number please',''), +prompt('Power please','')));
+
 alert(null == 0); // Выведет false - потому что null равен только undefined, и больше ничему.
