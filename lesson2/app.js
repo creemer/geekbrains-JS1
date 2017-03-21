@@ -1,9 +1,12 @@
  var a = +prompt('PLease A',''),
      b = +prompt('Please B','');
+
 if(a > 0 && b > 0) {
     alert(a - b);
+
 }else if(a < 0 && b < 0) {
     alert(a * b);
+
 } else {
     alert(a + b);
 }
@@ -79,19 +82,25 @@ function mathOperation(a, b, operation) {
 
         if(operation == '+') {
             return one + second;
+
         } else if(operation == '-'){
             return one - second;
+
         } else if(operation == '*') {
             return one * second;
+
         } else if(operation == '/'){
             if(second != 0) {
                 return one / second;
+
             } else {
                 alert('B - can\'t be a null, try another number!');
             }
+
         } else {
             alert('Please white a correct operation!');
         }
+
     }
     else {
         alert('Please write a number!');
@@ -105,14 +114,17 @@ alert( mathOperation( +prompt('Please First operand', ''), +prompt('Please Secon
  */
 function pow(x, n) {
     var sum = x;
+
     for (var i = 1; i < n; i++) {
         sum *= x;
     }
+
     return sum;
 }
 
 var x = +prompt('Number please',''),
     n = +prompt('Power please','');
+
 if (n < 1) {
     alert('Power ' + n + ' must be higher than 0')
 } else {
