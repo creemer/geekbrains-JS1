@@ -6,7 +6,7 @@ var i = 1;
 while(i < 100) {
     if(i == 2) {
         console.log( i++ );
-    } else if(i % 2 == 0 || isNature(i) ) {
+    } else if(i % 2 == 0 || isntNature(i) ) {
         i++;
     } else {
         console.log( i++ );
