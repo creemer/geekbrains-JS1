@@ -35,11 +35,11 @@ if(a > 0 && b > 0) {
  /**
   * Функция деления, с проверкой B - не ноль
   */
- function divNum() {
+ function divNum(a, b) {
     if(b != 0) {
-        return b / b
+        return a / b;
     } else {
-        alert('B - can\' be a zero!')
+        alert('B - can\' be a zero!');
     }
 }
 
