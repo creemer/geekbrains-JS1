@@ -46,3 +46,74 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.blackCastle {
+    background-image: url("img/blackCastle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteCastle {
+    background-image: url("img/whiteCastle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackSoldier {
+    background-image: url("img/blackSoldier.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteSoldier {
+    background-image: url("img/whiteSoldier.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackHorse {
+    background-image: url("img/blackHorse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteHorse {
+    background-image: url("img/whiteHorse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackQueen {
+    background-image: url("img/blackQueen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteQueen {
+    background-image: url("img/whiteQueen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackKing {
+    background-image: url("img/blackKing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteKing {
+    background-image: url("img/whiteKing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
