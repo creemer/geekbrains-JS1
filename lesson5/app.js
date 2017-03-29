@@ -14,6 +14,17 @@ for (var i = 1; i <= 8; i++) {
             generateOddLineSqr();
         }
 }
+function addFigures() {
+    addDarkPawns();
+    addWhitePawns();
+    addCastles();
+    addHorses();
+    addSoldiers();
+    addQueens();
+    addKings();
+}
+
+addFigures();
 
 function generateOddLineSqr() {
     for (var i = 1; i <= 8; i++) {
@@ -55,6 +66,7 @@ function addDarkPawns() {
     setTimeout("wrapper.getElementsByClassName('darkSqr')[7].classList.toggle('blackPawn')", 2400);
 
 }
+
 function addWhitePawns() {
     setTimeout("wrapper.getElementsByClassName('lightSqr')[24].classList.toggle('whitePawn')", 600);
     setTimeout("wrapper.getElementsByClassName('lightSqr')[25].classList.toggle('whitePawn')", 1200);
@@ -67,5 +79,34 @@ function addWhitePawns() {
     setTimeout("wrapper.getElementsByClassName('darkSqr')[27].classList.toggle('whitePawn')", 2100);
 }
 
-setTimeout('addDarkPawns()', 500);
-setTimeout('addWhitePawns()', 500);
+function addCastles() {
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[0].classList.toggle('blackCastle')", 2700);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[3].classList.toggle('blackCastle')", 2700);
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[31].classList.toggle('whiteCastle')", 3000);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[28].classList.toggle('whiteCastle')", 3000);
+}
+
+function addHorses() {
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[3].classList.toggle('blackHorse')", 3300);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[0].classList.toggle('blackHorse')", 3300);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[31].classList.toggle('whiteHorse')", 3600);
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[28].classList.toggle('whiteHorse')", 3600);
+}
+
+function addSoldiers() {
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[1].classList.toggle('blackSoldier')", 3900);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[2].classList.toggle('blackSoldier')", 3900);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[29].classList.toggle('whiteSoldier')", 4200);
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[30].classList.toggle('whiteSoldier')", 4200);
+}
+
+function addQueens() {
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[2].classList.toggle('blackQueen')", 4500);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[30].classList.toggle('whiteQueen')", 4500);
+}
+
+function addKings() {
+    setTimeout("wrapper.getElementsByClassName('darkSqr')[29].classList.toggle('whiteKing')", 4800);
+    setTimeout("wrapper.getElementsByClassName('lightSqr')[1].classList.toggle('blackKing')", 4800);
+}
+
