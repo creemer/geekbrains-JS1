@@ -23,10 +23,26 @@
     width: 100px;
     height: 100px;
     background-color: antiquewhite;
+
+
 }
 
 .darkSqr {
     width: 100px;
     height: 100px;
     background-color: saddlebrown;
+}
+
+.blackPawn {
+    background-image: url("img/blackPawn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whitePawn {
+    background-image: url("img/whitePawn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
