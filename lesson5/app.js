@@ -2,8 +2,33 @@
 
 var wrapper = document.createElement('div');
 wrapper.id = 'wrapper';
-wrapper.classList.add('flexed');
-document.body.insertBefore(wrapper, document.body.firstChild);
+wrapper.classList.add('flexed','relativePos');
+document.body.appendChild(wrapper);
+
+var numbers = document.createElement('div');
+numbers.classList.add('outSideSqr','flexedColumn');
+wrapper.appendChild(numbers);
+
+for (i = 0; i < 8; i++) {
+    sqr = document.createElement('div');
+    sqr.classList.add('sqrNumbers');
+    numbers.appendChild(sqr);
+};
+
+var letters = document.createElement('div');
+letters.classList.add('outUpSqr','flexed');
+wrapper.appendChild(letters);
+
+for (i = 0; i < 8; i++) {
+    sqr = document.createElement('div');
+    sqr.classList.add('sqrLetters');
+    letters.appendChild(sqr);
+};
+
+
+addNumbers();
+addLetters();
+addFigures();
 
 for (var i = 1; i <= 8; i++) {
     var sqr = document.createElement('div');
@@ -13,7 +38,31 @@ for (var i = 1; i <= 8; i++) {
         } else {
             generateOddLineSqr();
         }
-}
+};
+
+function addNumbers() {
+    document.getElementsByClassName('sqrNumbers')[0].innerText = '1'
+    document.getElementsByClassName('sqrNumbers')[1].innerText = '2'
+    document.getElementsByClassName('sqrNumbers')[2].innerText = '3'
+    document.getElementsByClassName('sqrNumbers')[3].innerText = '4'
+    document.getElementsByClassName('sqrNumbers')[4].innerText = '5'
+    document.getElementsByClassName('sqrNumbers')[5].innerText = '6'
+    document.getElementsByClassName('sqrNumbers')[6].innerText = '7'
+    document.getElementsByClassName('sqrNumbers')[7].innerText = '8'
+};
+
+function addLetters() {
+    document.getElementsByClassName('sqrLetters')[0].innerText = 'A'
+    document.getElementsByClassName('sqrLetters')[1].innerText = 'B'
+    document.getElementsByClassName('sqrLetters')[2].innerText = 'C'
+    document.getElementsByClassName('sqrLetters')[3].innerText = 'D'
+    document.getElementsByClassName('sqrLetters')[4].innerText = 'E'
+    document.getElementsByClassName('sqrLetters')[5].innerText = 'F'
+    document.getElementsByClassName('sqrLetters')[6].innerText = 'G'
+    document.getElementsByClassName('sqrLetters')[7].innerText = 'H'
+};
+
+
 function addFigures() {
     addDarkPawns();
     addWhitePawns();
@@ -22,9 +71,7 @@ function addFigures() {
     addSoldiers();
     addQueens();
     addKings();
-}
-
-addFigures();
+};
 
 function generateOddLineSqr() {
     for (var i = 1; i <= 8; i++) {
@@ -38,7 +85,7 @@ function generateOddLineSqr() {
             wrapper.appendChild(sqr);
         }
     }
-}
+};
 
 function generateEvenLineSqr() {
     for (var i = 1; i <= 8; i++) {
