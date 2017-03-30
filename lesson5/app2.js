@@ -94,7 +94,12 @@ function addLineSqr(line) {
 
 /**
  * Objects for figures.
- * @type {{pawn: {white: {position: [*], class: string}, black: {position: [*], class: string}}, castle: {white: {position: [*], class: string}, black: {position: [*], class: string}}, horse: {white: {position: [*], class: string}, black: {position: [*], class: string}}, soldier: {white: {position: [*], class: string}, black: {position: [*], class: string}}, queen: {white: {position: [*], class: string}, black: {position: [*], class: string}}, king: {white: {position: [*], class: string}, black: {position: [*], class: string}}}}
+ * @type {{pawn: {white: {position: [*], class: string}, black: {position: [*], class: string}},
+ * castle: {white: {position: [*], class: string}, black: {position: [*], class: string}},
+ * horse: {white: {position: [*], class: string}, black: {position: [*], class: string}},
+ * soldier: {white: {position: [*], class: string}, black: {position: [*], class: string}},
+ * queen: {white: {position: [*], class: string}, black: {position: [*], class: string}},
+ * king: {white: {position: [*], class: string}, black: {position: [*], class: string}}}}
  */
 var figures = {
     pawn : {
@@ -171,15 +176,15 @@ function addFigures(pos, cls, quantity) {
     }
 }
 
-addFigures(figures.pawn.white.position, figures.pawn.white.class, 8);
-addFigures(figures.pawn.black.position, figures.pawn.black.class, 8);
-addFigures(figures.castle.white.position, figures.castle.white.class, 2);
-addFigures(figures.castle.black.position, figures.castle.black.class, 2);
-addFigures(figures.horse.white.position, figures.horse.white.class, 2);
-addFigures(figures.horse.black.position, figures.horse.black.class, 2);
-addFigures(figures.soldier.white.position, figures.soldier.white.class, 2);
-addFigures(figures.soldier.black.position, figures.soldier.black.class, 2);
-addFigures(figures.queen.white.position, figures.queen.white.class, 1);
-addFigures(figures.queen.black.position, figures.queen.black.class, 1);
-addFigures(figures.king.white.position, figures.king.white.class, 1);
-addFigures(figures.king.black.position, figures.king.black.class, 1);
+setTimeout('addFigures(figures.pawn.white.position, figures.pawn.white.class, 8)', 300);
+setTimeout('addFigures(figures.pawn.black.position, figures.pawn.black.class, 8)', 600);
+setTimeout('addFigures(figures.castle.white.position, figures.castle.white.class, 2)', 900);
+setTimeout('addFigures(figures.castle.black.position, figures.castle.black.class, 2)', 1200);
+setTimeout('addFigures(figures.horse.white.position, figures.horse.white.class, 2)', 1500);
+setTimeout('addFigures(figures.horse.black.position, figures.horse.black.class, 2)', 1800);
+setTimeout('addFigures(figures.soldier.white.position, figures.soldier.white.class, 2)', 2100);
+setTimeout('addFigures(figures.soldier.black.position, figures.soldier.black.class, 2)', 2400);
+setTimeout('addFigures(figures.queen.white.position, figures.queen.white.class, 1)', 2700);
+setTimeout('addFigures(figures.queen.black.position, figures.queen.black.class, 1)', 3000);
+setTimeout('addFigures(figures.king.white.position, figures.king.white.class, 1)', 3300);
+setTimeout('addFigures(figures.king.black.position, figures.king.black.class, 1)', 3600);
