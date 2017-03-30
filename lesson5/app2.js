@@ -1,30 +1,51 @@
 'use strict'
 
+/**
+ * Adding main wrapper.
+ * @type {Element}
+ */
 var wrapper = document.createElement('div');
 wrapper.id = 'wrapper';
 wrapper.classList.add('flexed','relativePos');
 document.body.appendChild(wrapper);
 
+/**
+ * Adding wrapper for number squares.
+ * @type {Element}
+ */
 var numbers = document.createElement('div');
 numbers.classList.add('outSideSqr','flexedColumn');
 wrapper.appendChild(numbers);
 
+/**
+ * Adding squares for numbers to number wrapper.
+ */
 for (i = 0; i < 8; i++) {
     var sqr = document.createElement('div');
     sqr.classList.add('sqrNumbers');
     numbers.appendChild(sqr);
 };
 
+/**
+ * Adding wrapper for letter squares.
+ * @type {Element}
+ */
 var letters = document.createElement('div');
 letters.classList.add('outUpSqr','flexed');
 wrapper.appendChild(letters);
 
+/**
+ * Adding squares to letter wrapper.
+ */
 for (i = 0; i < 8; i++) {
     sqr = document.createElement('div');
     sqr.classList.add('sqrLetters');
     letters.appendChild(sqr);
 };
 
+/**
+ * Adding letters to letter squares.
+ */
 function addNumbers() {
     for (var i = 0; i < 8; i++) {
         document.getElementsByClassName('sqrNumbers')[i].innerText = (i + 1);
@@ -33,6 +54,9 @@ function addNumbers() {
 
 addNumbers();
 
+/**
+ * Adding letters to squares form array
+ */
 function addLetters() {
     var lettersArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
     for (var i = 0; i < 8; i++) {
@@ -50,6 +74,10 @@ for (var i = 0, j = 1; i < 8; i++) {
     j++;
 }
 
+/**
+ * Adds lines of squares. Adds by 8 squares to line. Check for black and white sqr.
+ * @param line - number of line. needs to check black or white sqr will be added
+ */
 function addLineSqr(line) {
     for (var i = 1; i <= 8; i++) {
         var sqr = document.createElement('div');
@@ -64,6 +92,10 @@ function addLineSqr(line) {
     }
 }
 
+/**
+ * Objects for figures.
+ * @type {{pawn: {white: {position: [*], class: string}, black: {position: [*], class: string}}, castle: {white: {position: [*], class: string}, black: {position: [*], class: string}}, horse: {white: {position: [*], class: string}, black: {position: [*], class: string}}, soldier: {white: {position: [*], class: string}, black: {position: [*], class: string}}, queen: {white: {position: [*], class: string}, black: {position: [*], class: string}}, king: {white: {position: [*], class: string}, black: {position: [*], class: string}}}}
+ */
 var figures = {
     pawn : {
         white : {
@@ -127,6 +159,12 @@ var figures = {
     },
 }
 
+/**
+ * Universal function for adding figures.
+ * @param pos - position on board
+ * @param cls - added class
+ * @param quantity - how much figures adds
+ */
 function addFigures(pos, cls, quantity) {
     for (var i = 0; i < quantity; i++) {
         wrapper.getElementsByClassName('sqr')[ pos[i] ].classList.toggle(cls);
