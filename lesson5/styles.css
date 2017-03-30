@@ -27,6 +27,10 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
+.sqr {
+    width: 100px;
+    height: 100px;
+}
 
 .outUpSqr {
     position: absolute;
@@ -58,14 +62,10 @@
 }
 
 .lightSqr {
-    width: 100px;
-    height: 100px;
     background-color: antiquewhite;
 }
 
 .darkSqr {
-    width: 100px;
-    height: 100px;
     background-color: saddlebrown;
 }
 

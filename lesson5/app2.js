@@ -42,6 +42,9 @@ function addLetters() {
 
 addLetters();
 
+/**
+ * Adds squares on board.
+ */
 for (var i = 0, j = 1; i < 8; i++) {
     addLineSqr(j);
     j++;
@@ -52,12 +55,93 @@ function addLineSqr(line) {
         var sqr = document.createElement('div');
 
         if( (i + line) % 2 == 0) {
-            sqr.classList.add('flexed', 'darkSqr');
+            sqr.classList.add('flexed', 'darkSqr', 'sqr');
             wrapper.appendChild(sqr);
         } else {
-            sqr.classList.add('flexed', 'lightSqr');
+            sqr.classList.add('flexed', 'lightSqr', 'sqr');
             wrapper.appendChild(sqr);
         }
     }
 }
 
+var figures = {
+    pawn : {
+        white : {
+            position: [8, 9, 10, 11, 12, 13, 14, 15],
+            class : "whitePawn",
+        },
+        black : {
+            position : [48, 49, 50, 51, 52, 53, 54, 55],
+            class : 'blackPawn',
+        }
+    },
+    castle : {
+        white : {
+            position: [0, 7],
+            class : 'whiteCastle'
+        },
+        black : {
+            position: [56, 63],
+            class : 'blackCastle'
+        }
+    },
+    horse : {
+        white : {
+            position: [1, 6],
+            class : 'whiteHorse'
+        },
+        black : {
+            position: [57, 62],
+            class : 'blackHorse'
+        }
+    },
+    soldier : {
+        white : {
+            position: [2, 5],
+            class : 'whiteSoldier'
+        },
+        black : {
+            position: [58, 61],
+            class : 'blackSoldier'
+        }
+    },
+    queen : {
+        white : {
+            position: [4],
+            class : 'whiteQueen'
+        },
+        black : {
+            position: [60],
+            class : 'blackQueen'
+        }
+    },
+    king : {
+        white : {
+            position: [3],
+            class : 'whiteKing'
+        },
+        black : {
+            position: [59],
+            class : 'blackKing'
+        }
+    },
+}
+
+function addFigures(pos, cls, quantity) {
+    for (var i = 0; i < quantity; i++) {
+        wrapper.getElementsByClassName('sqr')[ pos[i] ].classList.toggle(cls);
+    }
+}
+
+addFigures(figures.pawn.white.position, figures.pawn.white.class, 8);
+addFigures(figures.pawn.black.position, figures.pawn.black.class, 8);
+addFigures(figures.castle.white.position, figures.castle.white.class, 2);
+addFigures(figures.castle.black.position, figures.castle.black.class, 2);
+addFigures(figures.horse.white.position, figures.horse.white.class, 2);
+addFigures(figures.horse.black.position, figures.horse.black.class, 2);
+addFigures(figures.soldier.white.position, figures.soldier.white.class, 2);
+addFigures(figures.soldier.black.position, figures.soldier.black.class, 2);
+addFigures(figures.queen.white.position, figures.queen.white.class, 1);
+addFigures(figures.queen.black.position, figures.queen.black.class, 1);
+addFigures(figures.king.white.position, figures.king.white.class, 1);
+addFigures(figures.king.black.position, figures.king.black.class, 1);
