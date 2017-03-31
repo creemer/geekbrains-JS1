@@ -164,18 +164,6 @@ var figures = {
     },
 }
 
-/**
- * Universal function for adding figures.
- * @param pos - position on board
- * @param cls - added class
- * @param quantity - how much figures adds
- */
-function addFigures(pos, cls, quantity) {
-    for (var i = 0; i < quantity; i++) {
-        wrapper.getElementsByClassName('sqr')[ pos[i] ].classList.toggle(cls);
-    }
-}
-
 setTimeout('addFigures(figures.pawn.white.position, figures.pawn.white.class, 8)', 300);
 setTimeout('addFigures(figures.pawn.black.position, figures.pawn.black.class, 8)', 600);
 setTimeout('addFigures(figures.castle.white.position, figures.castle.white.class, 2)', 900);
@@ -188,3 +176,15 @@ setTimeout('addFigures(figures.queen.white.position, figures.queen.white.class, 
 setTimeout('addFigures(figures.queen.black.position, figures.queen.black.class, 1)', 3000);
 setTimeout('addFigures(figures.king.white.position, figures.king.white.class, 1)', 3300);
 setTimeout('addFigures(figures.king.black.position, figures.king.black.class, 1)', 3600);
+
+/**
+ * Universal function for adding figures.
+ * @param pos - position on board
+ * @param cls - added class
+ * @param quantity - how much figures adds
+ */
+function addFigures(pos, cls, quantity) {
+    for (var i = 0; i < quantity; i++) {
+        wrapper.getElementsByClassName('sqr')[ pos[i] ].classList.toggle(cls);
+    }
+}
