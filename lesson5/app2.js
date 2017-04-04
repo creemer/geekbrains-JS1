@@ -34,28 +34,20 @@ for (var i = 0, j = 1; i < 8; i++) {
 };
 
 /**
- * Adding squares to letter wrapper.
+ * Adding squares to letter and numbers wrappers. Than adding letters and numbers to sqrs.
  */
 for (i = 0; i < 8; i++) {
-    sqr = document.createElement('div');
-    sqr.classList.add('sqrLetters');
-    letters.appendChild(sqr);
-};
-
-/**
- * Adding squares for numbers to number wrapper.
- */
-for (i = 0; i < 8; i++) {
-    var sqr = document.createElement('div');
+    var sqr1 = document.createElement('div'),
+        sqr = document.createElement('div');
+    sqr1.classList.add('sqrLetters');
     sqr.classList.add('sqrNumbers');
+    letters.appendChild(sqr1);
     numbers.appendChild(sqr);
+    if(i ==7) {
+        addNumbers();
+        addLetters();
+    }
 };
-
-/**
- * Adding numbers and letters on board
- */
-addNumbers();
-addLetters();
 
 /**
  * Adding figures on board
