@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+}
+
+#wrapper {
+    width: 800px;
+    height: 800px;
+    box-shadow: 0 0 5px #535353;
+    margin: 5% auto;
+}
+.relativePos {
+    position: relative;
+}
+
+.flexed {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flexedColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.sqr {
+    width: 100px;
+    height: 100px;
+}
+
+.outUpSqr {
+    position: absolute;
+    top: -100px;
+    width: 800px;
+    height: 100px;
+}
+
+.outSideSqr {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 800px;
+}
+.sqrNumbers {
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.sqrLetters {
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.lightSqr {
+    background-color: antiquewhite;
+}
+
+.darkSqr {
+    background-color: saddlebrown;
+}
+
+.blackPawn {
+    background-image: url("img/blackPawn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whitePawn {
+    background-image: url("img/whitePawn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackCastle {
+    background-image: url("img/blackCastle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteCastle {
+    background-image: url("img/whiteCastle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackSoldier {
+    background-image: url("img/blackSoldier.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteSoldier {
+    background-image: url("img/whiteSoldier.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackHorse {
+    background-image: url("img/blackHorse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteHorse {
+    background-image: url("img/whiteHorse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackQueen {
+    background-image: url("img/blackQueen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteQueen {
+    background-image: url("img/whiteQueen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blackKing {
+    background-image: url("img/blackKing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whiteKing {
+    background-image: url("img/whiteKing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
