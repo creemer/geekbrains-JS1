@@ -1,0 +1,67 @@
+.bigSize {
+    display: inline-block;
+    transition: 1s;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 10px gray;
+    margin: 0 auto;
+}
+
+#prevPicArrow, #nextPicArrow {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#prevPicArrow{
+    background-image: url('img/leftarrow.png');
+}
+
+#nextPicArrow {
+    background-image: url('img/rightarrow.png');
+}
+
+.bigSizeImg {
+    transition: 1s;
+    width : 800px;
+    height: 600px;
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 810px;
+    margin: 30px auto;
+}
+
+.gallary > img {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+
+.gallary > img:hover {
+    cursor: pointer;
+}
+
+.biggerSize {
+    transition: 1s;
+    width: 850px;
+    height: 650px;
+    box-shadow: 0 0 25px darkred;
+    margin: 0 auto;
+}
+
+.biggerSizeImg {
+    transition: 1s;
+    width: 850px;
+    height: 650px;
+}
+
+.goods {
+    width:250px;
+    border: 1px solid black;
+}
